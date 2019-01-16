@@ -1,6 +1,8 @@
 # Use an existing docker image as a base
 FROM node:alpine
 
+COPY ./ ./
+
 # Download and install a dependency
 RUN npm install
 
