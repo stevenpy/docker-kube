@@ -1,6 +1,8 @@
 # Use an existing docker image as a base
 FROM node:alpine
 
+WORKDIR /usr/app
+
 COPY ./ ./
 
 # Download and install a dependency
